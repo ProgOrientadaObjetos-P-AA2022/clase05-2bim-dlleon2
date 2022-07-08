@@ -17,6 +17,10 @@ public class Principal {
         taxi.establecerCooperativaTaxi("Yahuarcuna");
         taxi.establecerTarifa();
         
+        TransporteTransvia transvia = new TransporteTransvia();
+        transvia.establecerCooperativaTtransvia("Leon");
+        transvia.establecerTarifa();
+        
         TiposTransporte tipos = new TiposTransporte();
         tipos.establecerTransporteBus(bus);
         tipos.establecerTransporteTaxi(taxi);

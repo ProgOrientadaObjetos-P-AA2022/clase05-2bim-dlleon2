@@ -3,6 +3,10 @@
  */
 package paquete04;
 
+import java.util.ArrayList;
+
+// cambios .8 .julio. 2022
+
 /**
  *
  * @author reroes
@@ -18,12 +22,15 @@ public class Principal {
         taxi.establecerTarifa();
         
         TiposTransporte tipos = new TiposTransporte();
-        tipos.establecerTransporteBus(bus);
-        tipos.establecerTransporteTaxi(taxi);
+        ArrayList<Transporte> transportes = new ArrayList<>();
+        transportes.add(bus);
+        transportes.add(taxi);
+        tipos.establecerTransportes(transportes);
         tipos.establecerPromedioTarifas();
         
         System.out.printf("Promedio de Tarifas: %.2f", 
                 tipos.obtenerPromedioTarifas());
+        
         
     }
 }
