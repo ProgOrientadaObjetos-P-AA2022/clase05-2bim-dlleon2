@@ -14,10 +14,13 @@ public class Principal {
         
         MenorEdad menor = new MenorEdad("Felipe", representante);
         
+        Tarjeta codigo = new Tarjeta("200123540");
         
-        System.out.printf("Nombre:%s - Tarjeta:%s\n",
+        
+        System.out.printf("Nombre:%s - Tarjeta:%s\n - Codigo:%s\n",
                 menor.obtenerNombre(), 
-                menor.obtenerRepresentante().obtenerTarjeta());
+                menor.obtenerRepresentante().obtenerTarjeta(),
+                codigo.obtenerCodigo());
         
     }
 }

@@ -3,22 +3,22 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package paquete09;
+package paquete10;
 
 /**
  *
- * @author reroes
+ * @author SALA I
  */
-public class APINetflix {
-    
+public class APIStarplus implements APIMovie{
     private String apiKey;
     
+    @Override
     public void establecerApiKey(String ak){
-        apiKey = ak+"123123";
+        apiKey = ak+"3548267";
     }
     
+    @Override
     public String obtenerApiKey(){
         return apiKey;
     }
-    
 }
